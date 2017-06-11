@@ -2,7 +2,7 @@ package main
 
 import "github.com/scgolang/sc"
 
-var bellFunc sc.UgenFunc = func(params sc.Params) sc.Ugen {
+func bell(params sc.Params) sc.Ugen {
 	var (
 		dur  = params.Add("dur", 1)
 		fund = params.Add("fund", 440)

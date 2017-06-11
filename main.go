@@ -19,7 +19,7 @@ fitton [Options]
 Options:
 -h              Print this help message
 -l              List the available sounds.
--play SOUND     Play SOUND.
+-s SOUND        Play SOUND.
 `
 
 var (
@@ -42,5 +42,6 @@ func init() {
 		fmt.Println(usage)
 	}
 	app = play.New(fs)
-	app.Add("bell", bellFunc)
+	app.Add("bell", bell)
+	app.Add("bubbles", bubbles)
 }
