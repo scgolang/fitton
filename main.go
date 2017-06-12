@@ -42,6 +42,8 @@ func init() {
 		fmt.Println(usage)
 	}
 	app = play.New(fs)
-	app.Add("bell", bell)
-	app.Add("bubbles", bubbles)
+	app.Add("bell", "bell", bell)
+	app.Add("bubbles", "bubbles", bubbles)
+	app.Add("amindex", "ami", ami)
+	app.Add("amindex", "rmi", rmi)
 }
