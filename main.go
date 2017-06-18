@@ -46,4 +46,5 @@ func init() {
 	app.Add("bubbles", "bubbles", bubbles)
 	app.Add("amindex", "ami", ami)
 	app.Add("amindex", "rmi", rmi)
+	app.Add("allpass", "allpass", allpass)
 }
